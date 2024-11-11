@@ -1,0 +1,97 @@
+/* for spinner */
+.spin {
+  display: flex;
+  justify-content: space-around;
+}
+#spinner {
+  height: 100px;
+  width: 100px;
+  border: 7px solid;
+  border-radius: 50%;
+  border-color: red black black black;
+  animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(365deg);
+  }
+}
+/* for color changing */
+.ex {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation: colors 2s infinite;
+}
+@keyframes colors {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellowgreen;
+  }
+  50% {
+    background-color: purple;
+  }
+  75% {
+    background-color: darkgreen;
+  }
+  100% {
+    background-color: palevioletred;
+  }
+}
+/* for text background image  */
+.text {
+  font-size: 100px;
+  background-image: url("goku.png");
+  background-size: contain;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.txt {
+  display: flex;
+  justify-content: center;
+}
+/* for text hover  */
+.name {
+  display: block;
+  padding: 10px;
+  background-color: gray;
+  color: white;
+  transition-duration: 0.7s;
+  text-align: center;
+  width: 200px;
+  font-size: 30px;
+}
+.nam {
+  display: flex;
+  justify-content: center;
+}
+.name:hover {
+  background-color: lightsteelblue;
+  color: blue;
+  cursor: pointer;
+  transform: translate(200px);
+}
+/* for image hover */
+.image {
+  background-color: black;
+  margin: 100px 0 0 200px;
+  width: 70%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.image img {
+  width: 10%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.684);
+  transition: all ease-in-out 0.5s;
+}
+.image img:hover {
+  width: 25%;
+}
